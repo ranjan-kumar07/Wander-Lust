@@ -1,11 +1,14 @@
 <% layout('layouts/boilerplate') -%>
 
 <script>
-    let mapToken = "<%= process.env.MAP_TOKEN %>";
-    let listing = <%-JSON.stringify( listings )%>
+    // let mapToken = "<process.env.MAP_TOKEN %>";
+    let listing = <%-JSON.stringify( listings )%>;
+      window.MAP_TOKEN = "<%= mapToken %>";
+
     
 
 </script>
+
 
 
 <div class="row">
