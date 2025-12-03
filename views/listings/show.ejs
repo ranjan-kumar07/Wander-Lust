@@ -1,9 +1,9 @@
 <% layout('layouts/boilerplate') -%>
 
 <script>
-    // let mapToken = "<process.env.MAP_TOKEN %>";
+    let mapToken = "<%= process.env.MAP_TOKEN %>";
     let listing = <%-JSON.stringify( listings )%>;
-      window.MAP_TOKEN = "<%= mapToken %>";
+    //   window.MAP_TOKEN = "< mapToken %>";
 
     
 
